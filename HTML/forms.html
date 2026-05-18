@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit">
+        <label for="Name">
+            Name:
+            <input type="text" id="Name" placeholder="Enter your name" required>
+        </label><br>
+        <label for="Password">
+            Password:
+            <input type="password" id="Password" placeholder="Enter your password" required>
+        </label><br>
+        <label for="email">
+            Email:
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label><br>
+        <br>
+        <label for="message">
+            Message:
+            <textarea id="message" name="fill it fast" rows="5" cols="30" placeholder="Feedback"></textarea>
+        </label><br><br>
+        <label for="gender">Gender:
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female">Female
+        </label><br>
+        <label for="course">Course:
+            <input type="checkbox">HTML
+            <input type="checkbox">CSS
+            <input type="checkbox">JavaScript
+        </label><br><br>
+        <label for="branches">Branches:
+            <select name="CSE">
+                <option value="Select option">Select option</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="IT">IT</option>
+            </select>
+        </label><br><br>
+
+        <!-- <input type="number" min="18" max="60"><br><br>
+        <input type="text" minlength="20" maxlength="50"><br><br>
+ -->
+
+        <label for="password">
+            Password:
+            <input type="password" pattern="[A-Za-z0-9]{8,}" title="Must be at least 8 characters long and contain only letters and numbers" required>
+        </label><br><br>
+
+
+        <!-- <label for="text">
+            <input type="text" >
+        </label> -->
+
+        <button type="reset">Reset</button>
+    </form>
+
+<fieldset>
+    <legend>
+        web development
+    </legend>
+</fieldset><br><br>
+
+<!-- <input type="file"><br>
+<input type="color"><br>
+<input type="range"><br>
+<input type="search"><br>
+<input type="number" max="10"><br><br>
+<input type="url"><br><br>
+<input type="text" autocomplete="on"> -->
+
+<!-- We get and post methonds in APi where get is to retrive data and post is used to display the data which we retrive. -->
+<!-- required -> it is mandatory field -->
+ <!--  -->
+</body>
+</html>
