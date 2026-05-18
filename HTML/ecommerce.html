@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">NYKAA SALE</h1>
+        <nav align="center">
+            <a href="#home">HOME</a> |
+            <a href="#products">PRODUCTS</a> |
+            <a href="#offers">OFFERS</a> |
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <!-- <hr> -->
+    <section id="home">
+        <!-- <h2>NYKAA</h2> -->
+        <h2><strong>Your skin deserves the best care!</strong></h2>
+        <img src="https://cdn.gyftr.com/blog/wp-content/uploads/2025/06/05064432/Nykaa-End-of-Sesaon-Sale.png" alt="SkinCare Banner" width="100%"><br>
+        <a href="https://www.nykaa.com/?login=1" target="_blank"><b><button>SHOP NOW</button></b></a>
+    </section>
+    <!-- <hr> -->
+    <section id="products">
+        <h2>OUR PRODUCTS</h2>
+        <table border="1"> 
+            <tr>
+                <th align="center">Products</th>
+                <th align="center">Brand</th>
+                <th align="center">Price</th>
+                <th align="center">Quantity</th>
+                <th align="center">Description</th>
+                <th align="center">Image</th>
+                <th align="center">Buy</th>
+            </tr>
+            <tr>
+                <td>Face Wash</td>
+                <td>Minimalist</td>
+                <td align="center">269</td>
+                <td align="center">100ml</td>
+                <td>Minimalist 2% Salicylic Acid + LHA Face Cleanser With Zinc For Reducing Sebum & Acne</td>
+                <td><img src="./assets/FaceWash.png" alt="Face Wash" width="100"></td>
+                <td><a href="https://www.nykaa.com/minimalist-2percent-salicylic-acid-lha-face-cleanser-with-zinc-for-reducing-sebum-acne/p/15797641?productId=15797641&pps=5&skuId=1467106" target="_blank" align="center">Buy Now</a></td>
+            </tr>
+            <tr>
+                <td>Moisturizer</td>
+                <td>Beauty of Joseon Dynasty Cream</td>
+                <td align="center">2090</td>
+                <td align="center">50ml</td>
+                <td>The Beauty of Joseon Dynasty Cream is a gentle, nourishing and brightening anti-aging cream that contains a rich blend of hanbang ingredients like ginseng root water to calm and brighten up your skin complexion.<br>
+                    The buttery soft formula helps to firm, smooth and moisturize your skin, it hydrates and brightens your skin tone while delivering natural younger-looking skin. Rice bran water and niacinamide together help bring back your skin glow and improve your skin texture by shrinking the appearance of pores over time. <br>
+                    Its hydrating properties stimulate collagen production. It has ingredients like honey extract, squalane and safflower seed oil nourish the skin while its ceramides help keep your skin barrier strong and protected.</td>
+                <td><img src="./assets/Moisturizer.png" alt="Moisturizer" width="100"></td>
+                <td><a href="https://www.nykaa.com/beauty-of-joseon-dynasty-cream/p/6951195?productId=6951195&pps=6" target="_blank" align="center">Buy Now</a></td>
+            </tr>
+            <tr>
+                <td>Sunscreen</td>
+                <td>Deconstruct Gel Sunscreen SPF 50+ PA+++, No White Cast, Lightweight, Non-Greasy - In - Vivo Tested</td>
+                <td align="center">332</td>
+                <td align="center">50g</td>
+                <td>Broad spectrun UVA & UVB protection | SPF 55+ PA+++++.
+                Prevents tanning & photo aging.</td>
+                <td><img src="./assets/Sunscreen.png" alt="Sunscreen" width="100"></td>
+                <td><a href="https://www.nykaa.com/deconstruct-lightweight-gel-sunscreen-spf-55-pa/p/6183938?productId=20910725&skuId=6183938&pps=6" target="_blank" align="center">Buy Now</a></td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2>CATEGORIES</h2>
+        <select name="categories">
+            <option value="select">Select Category</option>
+            <option value="facewash">Face Wash</option>
+            <option value="moisturizer">Moisturizer</option>
+            <option value="sunscreen">Sunscreen</option>
+        </select>
+    <h3>Shopping Steps</h3>
+    <ol>
+        <li>Select Product</li>
+        <li>Add to Cart</li>
+        <li>Checkout</li>
+    </ol>
+    </section>
+    <section id="offers">
+    <h2>Special Offers</h2>
+    <p>
+        <b>Buy 1 Get 1 Free</b> on selected products!  
+        <i>Limited time only</i>  
+        <u>Hurry up!</u>
+    </p>
+    <blockquote>
+        "Healthy skin is always in!"
+    </blockquote>
+</section>
+<hr>
+<section>
+    <h2>Skincare Tips</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
+    </audio>
+    <br><br>
+    <h2>Watch our video:</h2>
+    <video width="300" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+</section>
+<section>
+    <h2>Place Your Order</h2>
+    <form>
+        <label for="Name">
+            Name:
+            <input type="text" id="Name" placeholder="Enter your name" required>
+        </label><br><br>
+        <label for="Email">
+            Email:
+            <input type="email" id="Email" placeholder="Enter your email" required>
+        </label><br><br>
+        <label for="phone">
+            PhoneNo:
+            <input type="tel" id="PhoneNo" placeholder="Enter Mobile Number" required>
+        </label>
+        <br><br>
+        Skin Type:
+        <input type="radio" name="skin" id="dry" value="dry">
+        <label for="dry">Dry</label>
+        <input type="radio" name="skin" id="oily" value="oily">
+        <label for="oily">Oily</label>
+        <input type="radio" name="skin" id="combination" value="combination">
+        <label for="combination">Combination</label>
+        <input type="radio" name="skin" id="normal" value="normal">
+        <label for="normal">Normal</label><br><br>
+        Products:
+        <input type="checkbox" id="facewash" value="facewash">
+        <label for="facewash"> Face wash</label>
+        <input type="checkbox" id="moisturizer" value="moisturizer">
+        <label for="moisturizer"> Moisturizer</label>
+        <input type="checkbox" id="sunscreen" value="sunscreen">
+        <label for="sunscreen"> Sunscreen</label><br><br>
+        <label for="address">Address:</label><br>
+            <textarea rows="5" cols="30" placeholder="Enter Address"></textarea>
+        <br><br>
+         <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+    </form>
+</section>
+<section id="contact">
+    <h2>CONTACT US</h2>
+    <p>Email: <a href="mailto:nykaacare@gmail.com">nykaacare@gmail.com</a></p>
+    <p>Visit: <a href="https://nykaa.com" target="_blank">Our Partner</a></p>
+</section>
+<hr>
+<section>
+<p>copyright &copy; 2026 E-commerce Page. All rights reserved.</p>
+</section>
+</body>
+</html>
