@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <label for="Name">Name:
+        <input type="text" id="Name" placeholder="Enter your name" required>
+    </label><br><br>
+    <label for="Password">Password:
+        <input type="password" id="Password" placeholder="Enter your password" required>
+    </label><br><br>
+    <label for="email">Email:
+        <input type="email" id="email" placeholder="Enter your email" required>
+    </label><br><br>
+    <label for="gender">Gender:
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female">Female
+    </label><br><br>
+    <label for="events">Select Events:
+        <input type="checkbox"> Dance
+        <input type="checkbox"> Music
+        <input type="checkbox"> Hackathon
+        <input type="checkbox"> Sport
+    </label><br><br>
+    <label for="department">Department:</label><br>
+        <select>
+            <option value="Select option">Select option</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="MECH">MECH</option>
+            <option value="EEE">EEE</option>
+            <option value="AIML">AIML</option>
+            <option value="DS">DS</option>
+            <option value="CSIT">CSIT</option>
+            <option value="CSM">CSM</option>
+        </select><br><br>
+        <label for="file">Upload ID Card:</label>
+        <input type="file" id="file"><br><br>
+        <label for="message">Message:</label><br>
+            <textarea id="message" rows="5" cols="30" placeholder="Enter Message"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button><br>
+    </form>
+    <a href="collegefest.html">Back to Home</a>
+</body>
+</html>
