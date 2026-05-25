@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order</title>
+    <style>
+        .container{
+            width: 500px;
+            margin: auto;
+            background-color: rgb(147, 208, 147);
+            padding: 30px;
+
+        }
+        .box{
+            background-color: white;
+            /* border-radius: 10px; */
+            padding: 50px;
+            width: 400px;
+        }
+        body{
+            background-color: rgb(235, 230, 230);
+            font-family: Georgia, serif;
+        }
+        h1{
+            text-align:center;
+            font-size: 50px;
+            margin-top: auto;
+            color:black;
+            text-shadow: 3px 3px 10px white;
+        }
+        h2{
+            font-size: 40px;
+            color: black;
+            margin-top: 10px;
+        }
+        label{
+            /* text-align: right; */
+            font-size: 20px;
+        }
+        .heading{
+            text-align: center;
+            padding: 10px;
+            width: 450px;
+        }
+        input{
+            text-align: left;
+            width: 200px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+        <h1>Place an Order</h1></div>
+        <div class="box">
+            <h2>Billing Address</h2>
+            <form>
+                <label for="firstName">
+                        First Name:
+                    <input type="text" id="firstName" required>
+                </label><br><br>
+                <label for="lastName">
+                        Last Name:
+                    <input type="text" id="lastName" required>
+                </label><br><br>
+                <label for="streetAddress">
+                        Street Address:
+                    <input type="text" id="streetAddress" required>        
+                </label><br><br>
+                <label for="city">City:
+                    <input type="text" id="city" required>
+                </label><br><br>
+                <label for="state">State:
+                    <select name="state" id="state">
+                        <!-- <option value="Select option">Select option</option> -->
+                        <option value="Telangana">Telangana</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                    </select>
+                </label><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
