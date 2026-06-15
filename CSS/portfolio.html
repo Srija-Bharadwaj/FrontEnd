@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .abcd{
+            display: grid;
+            grid-template-rows: repeat(1, 0.5fr);
+        }
+        .a{
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            height: 250px;
+            background-color: rgb(241, 195, 239);
+            justify-content: center;
+            margin: auto;
+        }
+        .btn{
+            color: white;
+            width: 80px;
+            background-color: blueviolet;
+            border-radius: 3px;
+        }
+        .btnn{
+            color: white;
+            width: 180px;
+            height: 50px;
+            background-color: blueviolet;
+            border-radius: 3px;
+        }
+        .a img{
+            border-radius: 50%;
+            width: 160px;
+            height: 150px;
+            justify-content: end;
+            margin: 20px 0px 0px 0px;
+        }
+        .aa{
+            width: 300px;
+        }
+        h1{
+            text-align: center;
+        }
+        .aa h3{
+            color: blueviolet;
+        }
+        .b {
+            background-color: white;
+            height: 300px;
+        }
+        .c{
+            background-color: rgb(234, 222, 202);
+            height: 300px;
+        }
+        .cd{
+            display: grid;
+            grid-template-columns: repeat(3, 0.5fr);
+            gap: 30px;
+            justify-content: center;
+        }
+        .ca{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 2px;
+        }
+        .cb{
+            background-color: white;
+            width: 300px;
+            height: 200px;
+            border-radius: 2px;
+        }
+        .cc{
+            background-color: white;
+            width: 300px;
+            height: 200px;
+            border-radius: 2px;
+        }
+        .d{
+            height: 400px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="abcd">
+        <div class="a">
+            <img src="./assets/resume.jpeg">
+            <div class="aa">
+                <h1>Hi, I'm Alex</h1>
+                <h3>Frontend Developer</h3>
+                <p>I build responsive and user-friendly websites using HTML, CSS, JavaScript and modern tools.</p>
+                <button class="btn">HIRE ME</button>
+            </div>
+        </div>
+        <div class="b">
+            <h1>MY SKILLS</h1>
+        </div>
+        <div class="c">
+            <h1>PROJECTS</h1>
+            <div class="cd">
+                <div class="ca"></div>
+                <div class="cb"></div>
+                <div class="cc"></div>
+            </div>
+        </div>
+        <div class="d">
+            <h1>CONTACT ME</h1>
+            <form>
+                <label for="name">
+                    <input placeholder="Your name" required>
+                </label>
+                <label for="name">
+                    <input placeholder="Your email" required>
+                </label>
+                <label for="name">
+                    <input placeholder="Your Message" required>
+                </label>
+                <button class="btnn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
