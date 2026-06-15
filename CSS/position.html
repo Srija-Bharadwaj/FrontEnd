@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            position: relative;
+            right: -300px;
+        }
+        .box2{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            background-color: palegreen;
+            border: 2px solid white;
+            top: 100px;
+        }
+        /* static - default, no rtlb working.
+        absolute - rltb work.
+        fixed -  */
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div class="box">
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>
