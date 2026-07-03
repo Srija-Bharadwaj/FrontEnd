@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POLITICS</title>
     <style>
+        body{
+            padding-top: 80px;
+            overflow-x: hidden;
+        }
         .aa{
             display:flex;
             justify-content:space-between;
             align-items:center;
             color:white;
-            padding: 20px 40px;
+            padding: 10px 30px;
+            position: fixed;
+            background-color: white;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-sizing: border-box;
         }
         .aa nav{
             display:flex;
@@ -24,6 +35,14 @@
         .ac{
             display:flex;
             gap:10px;
+        }
+        .b{
+            position: relative;
+        }
+        .b img{
+            width: 100%;
+            height: auto;
+            display: block;
         }
         .c h2{
             padding: 0px 0px 0px 20px;
@@ -61,6 +80,9 @@
             margin: 20px;
             flex-wrap: nowrap;
         }
+        .d {
+            padding: 20px;
+        }
         .da{
             display:flex;
             gap:10px;
@@ -96,6 +118,42 @@
             font-size: 15px;
             font-weight: bold;
         }
+        .e h2{
+            padding: 0px 0px 0px 20px;
+        }
+        .eb{
+            flex: 1;
+            max-width: 19%;
+            text-decoration:none;
+            color:black;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .eb img{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .eb h2{
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .eb p{
+            font-size: 16px;
+            color: gray;
+        }
+        .ea{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 20px;
+            flex-wrap: nowrap;
+        }
         .f{
             background-color: rgb(214, 247, 214);
             height: 350px;
@@ -128,6 +186,43 @@
         }
         .h{
             background-color: black;
+            padding: 20px 30px;
+        }
+        .g h2{
+            padding: 0px 0px 0px 20px;
+        }
+        .gb{
+            flex: 1;
+            max-width: 19%;
+            text-decoration:none;
+            color:black;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .gb img{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .gb h2{
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .gb p{
+            font-size: 16px;
+            color: gray;
+        }
+        .ga{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 20px;
+            flex-wrap: nowrap;
         }
         .h p{
             color: white;
@@ -142,12 +237,13 @@
         .hc{
             margin-left: 20px;
         }
+       
     </style>
 </head>
 <body>
     <div class="aa">
         <div>
-            <img src="./assets/babu4.png">
+            <img src="./assets/babu4.png" width="70px" heigth="70px">
         </div>
         <div>
             <nav>
@@ -175,7 +271,16 @@
             </a>
         </div>
     </div>
-    <div class="b">2</div>
+    <div class="b">
+        <img src="./assets/babu16.jpg">
+        <div class="ba">
+            <h2>Nara Chandrababu Naidu is an Indian politician hailed for his futuristic outlook.</h2>
+            <p>
+                In a public life spanning for more than four decades, he has to his credit many trail-blazing initiatives that brought about revolutionary changes in the economic and social life of the people. Known for embracing technology to make governance people-friendly, he has been a pioneer in furthering the knowledge economy in the country, benefiting many generations of countless young men and women.
+            </p>
+            <button>Read More</button>
+        </div>
+    </div>
     <div class="c">
         <h2>LASTEST NEWS</h2>
         <div>
@@ -233,7 +338,38 @@
             </div>
         </div>
     </div>
-    <div class="e">5</div>
+    <div class="e">
+        <h2>ACHIEVEMENTS</h2>
+        <div>
+            <div class="ea">
+                <a href="https://ncbn.info/franklin-templeton-gets-40-acres-to-set-up-tech-campus-in-vizag/" class="eb">
+                    <img src="./assets/babu10.jpg" width="200px" height="200px">
+                    <h2>Franklin Templeton gets 40 acres to set tech campus....</h2>
+                    <p>(B Dasarath Reddy, Business Standard January 13, 2018) Acting on a detaile....</p>
+                </a>
+                <a href="https://ncbn.info/vizag-will-become-countrys-fintech-hub-in-future-n-chandrababu-naidu/" class="eb">
+                    <img src="./assets/babu11.jpg" width="200px" height="200px">
+                    <h2>Chandrababu Naidu flags 'serious lapses' in draft....</h2>
+                    <p>GVR Subba Rao | The Hindu | 8 December 2023 The Telugu Desam...</p>
+                </a>
+                <a href="https://ncbn.info/vajpayee-inaugurates-international-school-of-business-in-hyderabad/" class="eb">
+                    <img src="./assets/babu12.png" width="200px" height="200px">
+                    <h2>Rousing reception to Chadrababu Naidu at...</h2>
+                    <p>The Hindu | November 1, 2023 Fifty-three days after being arrested for allegedl...</p>
+                </a>
+                <a href="https://ncbn.info/bill-gates-recalls-first-meeting-with-naidu-20-years-ago/" class="eb">
+                    <img src="./assets/babu13.jpg" width="200px" height="200px">
+                    <h2>Cyclone Michaung: YSRCP govt failed to prevent large-scale damage</h2>
+                    <p>M Sambasiva Rao | The Hindu | 8 December 2023 The YSR Congress...</p>
+                </a>
+                <a href="https://ncbn.info/chandrababu-naidu-looks-east-to-revive-andhra-pradesh/" class="eb">
+                    <img src="./assets/babu14.jpg" width="200px" height="200px">
+                    <h2>NCBN takes charge as CM for the fourth term, takes up ski...</h2>
+                    <p>Chief Minister N Chandrababu Naidu took charge at the State secretariat a...</p>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="f">
         <div class="fa">
             <div class="fb">
@@ -246,18 +382,50 @@
             </div>
         </div>
     </div>
-    <div class="g">7</div>
-    <div class="h">
-        <div class="ha">
-            <div class="hc">
-                <p>&copy; 2025 Copyright &copy; CBN 2025. All rights reserved.</p>
-            </div>
-            <div class="hb">
-                <img src="./assets/fb.png" width="28px" height="28px">
-                <img src="./assets/twitter.png" width="28px" height="28px">
-                <img src="./assets/linkedin.png" width="28px" height="28px">
+    <div class="g">
+        <h2>RESOURCES</h2>
+        <div>
+            <div class="ga">
+                <a href="https://ncbn.info/franklin-templeton-gets-40-acres-to-set-up-tech-campus-in-vizag/" class="gb">
+                    <img src="./assets/babu17.jpg" width="200px" height="200px">
+                    <h2>Naidu confident about Clinton's trip</h2>
+                    <p>Syed Amin Jafri | Rediff.com | November 22, 2002 A high-level US..........</p>
+                </a>
+                <a href="https://ncbn.info/vizag-will-become-countrys-fintech-hub-in-future-n-chandrababu-naidu/" class="gb">
+                    <img src="./assets/babu18.jpg" width="200px" height="200px">
+                    <h2>I have left politics behind in the last millennium</h2>
+                    <p>George Iype | Rediff.com | February 8, 2000 Andhra Pradesh Chief Minister.....</p>
+                </a>
+                <a href="https://ncbn.info/vajpayee-inaugurates-international-school-of-business-in-hyderabad/" class="gb">
+                    <img src="./assets/babu19.png" width="200px" height="200px">
+                    <h2>Biotechnology Policy (2001) framed under Naidu......</h2>
+                    <p>Govt of AP | Chandrababu Naidu This is the full text of the Andhra Pradesh.....</p>
+                </a>
+                <a href="https://ncbn.info/bill-gates-recalls-first-meeting-with-naidu-20-years-ago/" class="gb">
+                    <img src="./assets/babu20.jpg" width="200px" height="200px">
+                    <h2>A triumph of alliance arithmetic - An analysis of .........</h2>
+                    <p>CSDS Team with K.C. Suri | Frontline | November 06, 1999 IT is easy to read too ...</p>
+                </a>
+                <a href="https://ncbn.info/chandrababu-naidu-looks-east-to-revive-andhra-pradesh/" class="gb">
+                    <img src="./assets/babu21.jpg" width="200px" height="200px">
+                    <h2>Cyberbabu of Hyderabad - Naidu's Little Known.....</h2>
+                    <p>Down to Earth | 15 February 1999 chandrababu Naidu is known more f.........</p>
+                </a>
             </div>
         </div>
     </div>
+    <footer class="h">
+    <div class="ha">
+        <div class="hc">
+            <p>&copy; 2025 Copyright &copy; CBN 2025. All rights reserved.</p>
+        </div>
+
+        <div class="hb">
+            <img src="./assets/fb.png" width="28" height="28">
+            <img src="./assets/twitter.png" width="28" height="28">
+            <img src="./assets/linkedin.png" width="28" height="28">
+        </div>
+    </div>
+</footer>
 </body>
 </html>
