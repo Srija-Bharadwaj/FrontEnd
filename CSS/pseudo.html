@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:active{
+            background-color: brown;
+        }
+        a:active{
+            background-color: black;
+        }
+        a:visited{
+            background-color: blueviolet;
+        }
+        input:focus{
+            color: palegoldenrod;
+        }
+
+
+        .two p:nth-child(2){
+            color: orange;
+        }
+
+
+        p:nth-of-type(4){
+            color:violet;
+        }
+        p:nth-last-of-type(3){
+            color: blanchedalmond;
+        }
+
+
+        :root{
+            --coor: yellow;
+            --name: blue;
+        }
+        h6{
+            color: var(-coor);
+            background-color: var(--name);
+        }
+
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+    <a href="#">Link</a>
+    <input type="text" placeholder="enter name">
+    <hr>
+    <div>
+        <p>child 1</p>
+        <p>child 2</p>
+        <div class="two">
+            <p>child 3</p>
+            <p>child 4</p>
+        </div>
+        <p>child 5</p>
+    </div>
+    <hr>
+    <div class="do">
+        <h1>Head 1</h1>
+        <h1>Head 2</h1>
+        <h1>Head 3</h1>
+        <p>para 1</p>
+        <p>para 2</p>
+        <p>para 3</p>
+        <p>para 4</p>
+    </div>
+    <hr>
+    <h6>This is para</h6>
+</body>
+</html>
+<!-- A pseudo cls is a special jeyword added to a selector that defines the special state of an HTML elements
+ :hover
+ :active
+ :visited
+ :focus- worked only on the input types.
+ :nth-child
+ :first-child
+ :last-child
+ :nth-of-type
+ :checked
+ 
+ * For html, head and body are childs.
+ * :root-> it is used to store the properties. In a varinale fomarts.
+ -->
