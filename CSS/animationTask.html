@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .one{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            background-color: rgb(115, 234, 97);
+            position: sticky;
+            height: 95px;
+            top: 0%;
+            left: 0%;
+            width: 97.35%;
+            z-index: 99;
+        }
+        .two a{
+            text-decoration: none;
+            color: black; 
+            font-weight: bold;
+        }
+        .two{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .four {
+        width: 500px;
+        height: 500px;
+        background-color: green;
+        position: relative;
+        margin: 20px;
+        color: white;
+        animation-name: four;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        }
+
+        @keyframes four {
+            0% {
+                left: 0px;
+                background-color: green;
+            }
+
+            50% {
+                left: 150px;
+                background-color: yellow;
+            }
+
+            100% {
+                left: 300px;
+                background-color: red;
+            }
+        }
+        .five{
+            width: 800px;
+            height: 500px;
+            background-color: purple;
+            margin: 20px;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            color: white;
+        }
+        .five:hover{
+            width: 220px;
+            background-color: blue;
+            transform: rotate(20deg);
+        }
+    </style>
+</head>
+<body>
+    <header class="one">
+        <h1>CSS TutorialSpot</h1>
+        <div class="two">
+            <a href="=#">Basic CSS</a>
+            <a href="#">Animations</a>
+            <a href="#">Transactions</a>
+            <a href="#">More</a>
+        </div>
+    </header>
+    <section class="three">
+        <h2>CSS Animations</h2>
+        <p>Animations in web development are used to make a website more interactive, attractive, and user-friendly by adding motion effects to HTML elements. Instead of elements appearing or changing instantly, animations allow smooth and gradual changes, which improves the overall user experience.
+            In CSS, animations help elements change their style over time. These changes can include movement, color change, size change, opacity change, or transformation effects like rotation and scaling. Animations are commonly used in buttons, loading screens, banners, menus, and page transitions.
+            There are two main ways to create animations in CSS:<br>
+            <h3>1. Keyframes </h3><h3>2. Transitions</h3><hr>
+        </p>
+    </section>
+    <h2>
+        1.Keyframes:
+    </h2>
+    <div class="four">Keyframes</div>
+    <div class="five">
+        <h2>1. Transitions:</h2>
+        <p>CSS transitions are used to change property values smoothly from one state to another. They usually work with user actions like hover, focus, or click.</p>
+        <h3>Key points:-</h3>
+        <ol>
+            <li>Works between two states(start and end)</li>
+            <li>Requires user interaction</li>
+            <li>Simple and easy to use</li>
+        </ol>
+        <h3>Examples:-</h3>
+        <ul>
+            <li>Button hover effect</li>
+            <li>Link color changes</li>
+            <li>Menu highlight effects </li>
+        </ul>
+        <!-- <div class="five">Transitions</div> -->
+    </div>
+</body>
+</html>
